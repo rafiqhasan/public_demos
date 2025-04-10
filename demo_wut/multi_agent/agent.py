@@ -11,8 +11,8 @@ from google.adk.agents import LlmAgent
 PROJECT_ID = "hasanrafiq-test-331814"  # @param {type:"string"}
 VERTEX_LOCATION = "us-central1"  # @param {type:"string"}
 
-API_KEY = "AIzaSyDIK9C8dOorSDI6bpq2pPtQqgkS7K9qM7Q" # @param {type:"string"}
-CX = "a626e35257e324d04" # @param {type:"string"}
+API_KEY = "AIzaSyDIK9C8dOorSDI6bpq2pPtQqgkS7K9qM*Q" # @param {type:"string"}
+CX = "a626e3525*e324d04" # @param {type:"string"}
 
 def google_search(query: str) -> List[Dict[str, Any]]:
     """
