@@ -1,8 +1,10 @@
-# Google Custom Search API Setup Guide
+# Multi Agent Application with Google Agent Development Kit
 
-This guide walks you through the process of setting up Google Custom Search API to enable programmatic search functionality in your applications.
+A guide on how to setup a multi-agentic application with Google ADK and Gemini
 
 ## Prerequisites
+
+## Google Custom Search API Setup Guide
 
 - A Google account
 - A project that needs search functionality
