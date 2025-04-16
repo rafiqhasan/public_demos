@@ -58,4 +58,4 @@ A guide on how to setup a multi-agentic application with Google ADK and Gemini
 
 ## Agent Engine: Test Agent
 
-1. `python test_agent.sh`
+1. `python multi_agent/vertex_agent_test.py`
