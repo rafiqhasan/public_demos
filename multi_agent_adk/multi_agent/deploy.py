@@ -1,11 +1,8 @@
 import vertexai
 from vertexai.preview import reasoning_engines
 from vertexai import agent_engines
+from constants import PROJECT_ID, LOCATION, STAGING_BUCKET
 import agent
-
-PROJECT_ID = "hasanrafiq-test-331814"
-LOCATION = "us-central1"
-STAGING_BUCKET = "gs://hasanrafiq-test-331814"
 
 vertexai.init(
     project=PROJECT_ID,
@@ -20,7 +17,7 @@ app = reasoning_engines.AdkApp(
 
 remote_app = agent_engines.create(
     agent_engine=agent.root_agent,
-    extra_packages = ["agent.py"],
+    extra_packages = ["agent.py", "constants.py"],
     requirements=[
         "google-cloud-aiplatform[adk,agent_engines]"   
     ]

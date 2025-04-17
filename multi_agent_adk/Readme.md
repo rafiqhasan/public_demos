@@ -47,7 +47,7 @@ A guide on how to setup a multi-agentic application with Google ADK and Gemini
 ## Running the demo directly - ADK Web
 
 1. Navigate to the directory demo_wut
-2. Change variables in `multi_agent/.env` and `multi_agent/agent.py`
+2. Change variables in `multi_agent/.env` and `multi_agent/constants.py`
 3. `sh run_agent_adt_web.sh.sh`
 
 ## Agent Engine: Deploying agent

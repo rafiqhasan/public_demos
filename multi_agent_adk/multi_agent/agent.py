@@ -1,18 +1,16 @@
-# import langgraph
-# import langchain
 import requests
 
-# from langchain_google_vertexai import ChatVertexAI
 from typing import TypedDict, Annotated, Literal, List, Dict, Any, Optional
-# from typing_extensions import Annotated
 from google.cloud import aiplatform
 from google.adk.agents import LlmAgent
 
-PROJECT_ID = "hasanrafiq-test-331814"  # @param {type:"string"}
-VERTEX_LOCATION = "us-central1"  # @param {type:"string"}
-
-API_KEY = "AIzaSyDIK9C8dOorSDI6bpq2pPtQqgkS7K9qM7Q" # @param {type:"string"}
-CX = "a626e35257e324d04" # @param {type:"string"}
+# Use a relative import that works in both contexts
+try:
+    # When imported as a module from ADK
+    from multi_agent.constants import PROJECT_ID, LOCATION, STAGING_BUCKET, API_KEY, CX
+except ModuleNotFoundError:
+    # When run directly or imported from current directory
+    from constants import PROJECT_ID, LOCATION, STAGING_BUCKET, API_KEY, CX
 
 def google_search(query: str) -> List[Dict[str, Any]]:
     """
