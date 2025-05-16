@@ -13,7 +13,7 @@ except ModuleNotFoundError:
     from constants import PROJECT_ID, LOCATION, STAGING_BUCKET, API_KEY, CX
 
 # Initialize FastMCP server
-mcp = FastMCP("demo-mcp-server")
+mcp = FastMCP("search-services-server", port=8000)
 
 @mcp.tool()
 async def google_search(query: str) -> List[Dict[str, Any]]:
@@ -74,11 +74,6 @@ async def google_search(query: str) -> List[Dict[str, Any]]:
         # than to raise exceptions that could break the flow
         print(f"Error performing search: {e}")
         return []
-
-@mcp.tool()
-async def flight_booking_tool(from_location: str, to_location: str, passenger_name: str, date: str):
-    #Dummy
-    return {'flight_id': '123456', 'passenger_name': passenger_name, 'from': from_location, 'to': to_location}
 
 if __name__ == "__main__":
     # Initialize and run the server
