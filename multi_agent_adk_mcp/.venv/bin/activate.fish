@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/rafiqh/public_demos/adk_multi_agent_mcp/.venv
+set -gx VIRTUAL_ENV /home/rafiqh/public_demos/multi_agent_adk_mcp/.venv
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH
