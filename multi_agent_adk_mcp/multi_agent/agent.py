@@ -13,8 +13,8 @@ def create_agent():
                                 )
                             )])
 
-  flight_agent = LlmAgent(name="Flight_Booking",
-                          description="Handles requests to Book flights tickets",
+  flight_agent = LlmAgent(name="Travel_Planning",
+                          description="Handles requests to Book flights, search hotels and book hotels",
                           tools=[MCPToolset(
                                 connection_params=SseServerParams(
                                     url="http://0.0.0.0:8001/sse",
@@ -24,7 +24,7 @@ def create_agent():
   root_agent = LlmAgent(
       name="RequestCoordinator",
       model="gemini-2.0-flash",
-      instruction="Route user requests: Use Google Search agent for performing search, Flight Booking for booking flight tickets.",
+      instruction="Route user requests: Use Google Search agent for performing search, planning for travels like flights and hotels.",
       description="Main help desk router.",
       sub_agents=[search_agent, flight_agent]
   )
