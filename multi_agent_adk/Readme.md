@@ -53,7 +53,7 @@ A guide on how to setup a multi-agentic application with Google ADK and Gemini
 ## Agent Engine: Deploying agent
 
 1. `cd multi_agent_adk/multi_agent/`
-2. `sh deploy_agent.sh`
+2. `sh deploy.sh`
 3. Wait for upto 10 minutes for the agent to be deployed
 
 ## Agent Engine: Test Agent
