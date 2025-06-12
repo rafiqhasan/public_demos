@@ -50,13 +50,13 @@ A guide on how to setup a multi-agentic application with Google ADK and Gemini
 2. Change variables in `multi_agent/.env` and `multi_agent/constants.py`
 3. `sh run_agent_adt_web.sh`
 
-## Agent Engine: Deploying agent
+## Agent Engine: Deploying agent on Vertex Agent Engine
 
 1. `cd multi_agent_adk/multi_agent/`
-2. `sh deploy_agent.sh`
+2. `sh deploy.sh`
 3. Wait for upto 10 minutes for the agent to be deployed
 
-## Agent Engine: Test Agent
+## Agent Engine: Test Agent deployed on Vertex Agent Engine
 
 1. `cd multi_agent_adk/multi_agent/`
 2. `python vertex_agent_test.py`
